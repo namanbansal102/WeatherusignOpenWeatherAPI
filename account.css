@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}.container{
+    display: grid;
+    place-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),  url('img/suno.jfif');
+    background-size: 100% 100%;
+    
+
+    height: 99.4vh;
+    width: 99.4vw;
+    border: 2px solid black;
+}.login-cont{
+
+    height: 58vh;
+    width: 25vw;
+    border-radius: 25px;
+    z-index: 999;
+   
+    font-family: 'Mulish', sans-serif;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+}.buttons-one button:nth-child(1){
+    border: none;
+    border-top-left-radius: 15px;
+    padding: 3px;
+    border-bottom-left-radius: 15px;
+    margin-right: 1px;
+}.buttons-two button:nth-child(1){
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px ;
+    border: none;
+    padding: 3px;
+}.buttons{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 0.00002px;
+    
+}.buttons button:hover{
+    
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+}.buttons button{
+    background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+background:transparent;
+font-weight: bold;
+
+}.form{
+    
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}#username{
+    width: 13rem;
+    height: 2rem;
+    margin: auto;
+    border: none;outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+#pass{
+    width: 13rem;
+    height: 2rem;
+    
+    margin: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 240, 240);
+}.myloginIcons{
+    width: fit-content;
+   
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: white;
+    
+}.myloginIcons i{
+    padding: 10px;
+}.myloginIcons i:hover{
+    color: rgb(168, 163, 174);
+}.form h4{
+    font-size: 24px;
+    font-weight: bold;
+    
+    width: fit-content;
+    margin: auto;
+}#username:hover{
+    outline: none;
+  
+}
+#pass:hover{
+    outline: none;
+ 
+}h6{
+    display: none;
+}#final-button{
+    width: fit-content;
+    margin: auto;
+    padding: 4px;
+    border-radius: 15px;
+ background: none;
+ border: 2px solid white;
+ 
+ color: white;
+ cursor: pointer;
+  
+}#final-button:hover{
+    border-color: gray;
+    
+    
+}h5{
+    color: white;
+    margin-top: 5px;
+}

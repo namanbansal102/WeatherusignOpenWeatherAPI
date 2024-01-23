@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/70972682bd.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="search-bar">
+                <input id="search" type="text" placeholder="Search for Places">
+                <i id="search-button" class="fa-solid fa-cancel"onclick="updateTemp()"></i>
+                <br><h4 id="showError"></h4>
+                
+            </div>
+                <div  id="weatherImg" class="weather-image">
+                  
+                   
+                </div>
+                    
+                        <h1 id="temp">12C</h1>
+                    
+                    <div class="date-time">Monday</div>
+                    <div class="weather-type">
+                        <i class="fa-sharp  fa-light fa-clouds"></i>
+                        
+                        <h4 id="cloud">Mostly Cloudy</h4>
+                    </div>
+                    <h4 id="humidity">Rain</h4>
+                    <i class="fa-solid fa-raindrops"></i>
+                    <div class="rain"></div>
+        </div>
+        <div class="main-content">
+            <div class="main-nav-bar">
+
+                <a href="" class="navbar-icons">Home</a>
+                <a href="" class="navbar-icons">About us</a>
+                <a href="" class="navbar-icons">Track</a>
+                <a href="" class="navbar-icons">Location</a>
+                <div class="nav-but">
+                    <span class="material-symbols-outlined">
+                        thermostat
+                        </span>
+                    <span class="material-symbols-outlined">
+                        settings
+                        </span>
+                        
+                        <span id="account" class="material-symbols-outlined">
+                            account_circle
+                            </span>
+                            
+                            <div id="submenu">
+                                <ul>
+                                    <li><a href="login.html">Login</a></li> 
+                                    <li>SignUp</li>
+                                </ul>
+                            </div  >
+                       </div>
+                   
+                    </div>
+           <div class="highlight"> <h4 style="font-family: 'Varela Round', sans-serif; margin: 20px;">Today's Highlight
+        <!-- highlight sectio ends -->
+    </div>
+            <div class="main-highlights">
+                <div class="box wind-status"><h4>Wind Status</h4>
+                  <div class="wind-heading"> <span id="wind-value">7.70</span><span>km/h</span></div> 
+                    <i class="fa-sharp fa-solid fa-location-dot"></i><span id="place">Sirsa</span>
+                    
+                </div>
+
+
+                <div class="box sunrise-set"><h4>Sunsrise & Sunset</h4>
+                <div class="sunrise-cont">
+                    <img src="img/sunrise.png" alt="">
+                    
+                    <h4 id="sunrise-time">6:09Am
+                        <br><span id="sunrise-calculated-time">7;7</span>
+                    </h4>
+                    
+                    
+                    <img src="img/sunset .png" alt="">
+                    <h4 id="sunset-time">5:00PM
+                       <br> <span id="sunset-calculated-time">gfg</span>
+                    </h4>
+                   
+                    
+                </div></div>
+
+                <div class="box visibility"><h4>Visibility</h4>
+                   <div class="visible-heading">  <span id="visible">7.70</span><span>km</span></div>
+                   <div class="visible-status">
+                    <h4>Avarage</h4>
+                   </div>
+                </div>
+
+                <div class="box sealevel"><h4>Sealevel</h4></div>
+
+                <div class="box aqi"><h4>Air Quality</h4>
+               <div class="aqii"><h1 id="aqi-display">56</h1>
+               </div>
+            <div class="aqi-box"><div class="ball"></div></div>
+            <h4 id="aqi-quality">Average</h4></div> 
+
+                <div class=" box clouds"><h4>CLouds</h4></div>
+
+
+            </div>
+        </div>
+
+        <!-- ends -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
